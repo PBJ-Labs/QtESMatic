@@ -15,9 +15,9 @@ bool g_bFilterTextures = false;
 bool g_bShowCrosshair = false;
 float g_fCameraBackgroundColor[3] = { 1.0f, 1.0f, 1.0f };
 
-QESGlobals* g_pGetWidget(){};
+QESGlobals g_pGetWidget(){};
 
-CamWnd::CamWnd() : QWidget(g_pGetWidget()->d_GLRectangle)
+CamWnd::CamWnd() : QWidget(g_pGetWidget().d_GLRectangle)
 {
 
 }

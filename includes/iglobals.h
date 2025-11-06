@@ -46,6 +46,7 @@ public:
   QWidget* d_YZWindow;
   QWidget* d_GlBase;
   QWidget* d_GlRectangle;// gl window?
+  QWidget* d_CameraWindow;
   QMenu* d_MainMenu;// File
 
   //global variables

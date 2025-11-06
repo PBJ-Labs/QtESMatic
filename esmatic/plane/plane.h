@@ -39,9 +39,22 @@ public:
    const vec3 vB;
    const vec3 vC;
 
+  const vec3 normal;
+
+  /*get the plane vectors*/
+  //this returns one
    const vec3& getVector(vec3& v){
      return v;
    }
+
+
+  //return a normal for the plane
+  const vec3& getNormal(vec3& n){
+    return n;
+  }
+
+  
+
 };
 
 

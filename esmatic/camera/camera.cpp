@@ -12,6 +12,8 @@ bool g_bFakeLight = false;
 bool g_bFilterBrushes = false;
 bool g_bFilterEntities = false;
 bool g_bFilterTextures = false;
+bool g_bShowCrosshair = false;
+float g_fCameraBackgroundColor[3] = { 1.0f, 1.0f, 1.0f };
 
 QESGlobals* g_pGetWidget(){};
 

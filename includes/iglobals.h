@@ -62,4 +62,6 @@ public:
   bool m_bAutoCaulk; // do brushes automatically caulk on creation
 };
 
+QESGlobals g_qesglobals;
+
 #endif

@@ -39,7 +39,10 @@ public:
    const vec3 vB;
    const vec3 vC;
 
-  const vec3 normal;
+   const vec3 normal;
+
+  //points are deduceable
+   auto points[4];
 
   /*get the plane vectors*/
   //this returns one
@@ -51,6 +54,11 @@ public:
   //return a normal for the plane
   const vec3& getNormal(vec3& n){
     return n;
+  }
+
+  //returns a point on the plane
+  const auto& getPoint(auto& p){
+    return p;
   }
 
   

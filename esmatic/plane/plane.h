@@ -36,7 +36,7 @@ public:
   ~Plane(); //deconstructor
 
 //construct plane with args
-Plane(vec3 _va, vec3 _vb, vec3 _vc, vec3 _norm) : _va ( vA ), _vb ( vB ), _vc ( vC ), _norm ( normal )
+Plane(vec3 _va, vec3 _vb, vec3 _vc, vec3 _norm) : _va ( vA ), _vb ( vB ), _vc ( vC ), _norm ( normal );
 
    const vec3 vA;
    const vec3 vB;

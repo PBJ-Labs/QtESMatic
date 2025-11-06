@@ -10,6 +10,6 @@
 
 #include <gl/GL.h>
 
-class CamWnd : public 
+class CamWnd : public QWidget
 
 #endif

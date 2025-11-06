@@ -30,6 +30,7 @@ DEALINGS IN THE SOFTWARE.
 
 #include <QWidget.h>
 
-
+typedef void (*PFN_GET_WIDGET)(QWidget* pWidget);
+typedef bool (*PFN_SEL_WIDGET)(QWidget* pWidget);//setup window selection code
 
 #endif

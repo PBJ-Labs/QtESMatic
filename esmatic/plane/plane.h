@@ -64,6 +64,10 @@ Plane(vec3 _va, vec3 _vb, vec3 _vc, vec3 _norm) : _va ( vA ), _vb ( vB ), _vc ( 
     return p;
   }
 
+  //returns a plane
+  const Plane& getPlane(Plane& p){
+    return p;
+  }
   
 
 };

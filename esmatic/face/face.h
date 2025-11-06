@@ -30,6 +30,9 @@ public:
     return p;
   }
 
+  //create a new face
+  virtual void createFace(Face& f, vec3 bounds, auto p) = 0;
+
 
 
 };

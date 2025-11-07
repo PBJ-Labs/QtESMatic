@@ -27,12 +27,40 @@ CamWnd::CamWnd() : QWidget(g_pGetWidget().d_GLRectangle)
 *    Check if the camera's id is valid, if it is, increment it, if else then create a camera
 */
 const void CameraListenerId(CamWnd& camera) {
-  if( g_nCameraId ) {
-      camera.getCameraId( g_nCameraId );
-      g_nCameraId++;
-  } else{
-    if ( !g_nCameraId ){
-      camera.createCamera( &camera );
+    if( g_nCameraId ) {
+        camera.getCameraId( g_nCameraId );
+        g_nCameraId++;
+    } 
+  else {
+        if ( !g_nCameraId ){
+            camera.createCamera( &camera );
+        }
     }
+}
+
+//get origin vectors
+void CameraInitializeOrigin(CamWnd& camera) {
+  //if the camera is new and fresh get the original origin
+    if ( g_nCameraId = 0 ){
+       camera.getCameraOrigin( g_fOrigin );
+    }
+}
+
+const void CameraListenerFreeze(CamWnd& camera) {
+  if ( g_bFreeze == true ) {
+      camera.getCameraFreezed( g_bFreeze );
+      !CameraInitializeOrigin( &camera );//disable origins
   }
 }
+
+const void CameraListenerLighting(CamWnd& camera) {
+    if ( g_bBakeLight ) {
+       camera.getCameraLighting( g_bBakeLight );
+    } else if ( g_bFakeLight ){
+      camera.getCameraLighting( g_bFakeLight );
+    }
+}
+
+
+
+

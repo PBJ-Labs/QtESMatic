@@ -65,9 +65,13 @@ public:
    const virtual void drawPlane(Plane& plane) = 0;
    const void drawBrush() const;
    const virtual void drawBrush() = 0;
-
-
 };
+
+//listen for camera id
+const void CameraListenerId(CamWnd& camera);
+void CameraInitializeOrigin(CamWnd& camera);
+const void CameraListenerFreeze(CamWnd& camera);
+const void CameraListenerLighting(CamWnd& camera);
 
 
 #endif

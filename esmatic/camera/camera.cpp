@@ -21,5 +21,18 @@ QESGlobals g_pGetWidget(){};
 
 CamWnd::CamWnd() : QWidget(g_pGetWidget().d_GLRectangle)
 {
-
+  
+}
+/*
+*    Check if the camera's id is valid, if it is, increment it, if else then create a camera
+*/
+const void CameraListenerId(CamWnd& camera) {
+  if( g_nCameraId ) {
+      camera.getCameraId( g_nCameraId );
+      g_nCameraId++;
+  } else{
+    if ( !g_nCameraId ){
+      camera.createCamera( &camera );
+    }
+  }
 }
